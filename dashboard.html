@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📊 House Price Dashboard</h1>
+
+    <h2>House Price Distribution</h2>
+    <img src="{{ url_for('static', filename='price_distribution.png') }}" width="100%">
+
+    <h2>Correlation Heatmap</h2>
+    <img src="{{ url_for('static', filename='correlation_heatmap.png') }}" width="100%">
+
+    <h2>Top 10 Important Features</h2>
+    <img src="{{ url_for('static', filename='feature_importance.png') }}" width="100%">
+
+    <br><br>
+
+    <a href="/">
+        <button>Back to Predictor</button>
+    </a>
+
+</div>
+
+</body>
+</html>
